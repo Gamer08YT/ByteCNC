@@ -12,6 +12,10 @@ The idea is to desolder the 74HC245T Chips (levelshifters) and directly attach t
 
 https://zeromips.org/posts/2022-05-29-5a-75b/
 
+### Bypass PCB
+
+You can use a flexible PCB to Bypass the 74LVC245 IC see https://github.com/Disasm/hc245t-bypass .
+
 ### Software
 As Software i use LinuxCNC running on a Lenovo Thinkcenter.
 
