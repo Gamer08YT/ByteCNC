@@ -6,8 +6,11 @@ The Motion Controller is based on the 5A-75B wich is a cheap LED Driver Board.
 
 The Board has two 1 GBit/s NICs, has 16 HUB75-connectors, with each 6 individual pins (96 total). Besides these pins, there are 8 shared pins. This makes the total number of usable pins 104.
 
-<img src="https://raw.githubusercontent.com/q3k/chubby75/refs/heads/master/5a-75e/images/cl-5a-75e-v71-front.jpg"/>
+<img height="300px" src="https://raw.githubusercontent.com/q3k/chubby75/refs/heads/master/5a-75e/images/cl-5a-75e-v71-front.jpg"/>
 
+Most Boards wich much GPIOs are very expensive, like Mesa or ProjectCNC.
+
+For many beginnings, these qualitative but expensive cards are often difficult to manage.
 
 ### Idea
 
