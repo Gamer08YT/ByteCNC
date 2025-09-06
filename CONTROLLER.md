@@ -15,4 +15,4 @@ https://zeromips.org/posts/2022-05-29-5a-75b/
 ### Software
 As Software i use LinuxCNC running on a Lenovo Thinkcenter.
 
-To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX-CNC
+To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX-CNC wich simulates a Mesa Driver.
