@@ -10,5 +10,9 @@ The Board has two 1 GBit/s NICs, has 16 HUB75-connectors, with each 6 individual
 
 The idea is to desolder the 74HC245T Chips (levelshifters) and directly attach the FPGA to the connector to use some IOs as Input Pins. 
 
-
 https://zeromips.org/posts/2022-05-29-5a-75b/
+
+### Software
+As Software i use LinuxCNC running on a Lenovo Thinkcenter.
+
+To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX-CNC
