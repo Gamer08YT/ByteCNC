@@ -29,6 +29,12 @@ To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX
 
 ### Build && Flash
 
+#### ESP Programmer
+
+To use the ESP Programmer to flash the FPGA you need to install the ``fpga-icestorm`` Driver.
+
+The Connection Log can be checked with ``sudo dmesg | grep FTDI``
+
 ```
 litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
 litexcnc flash_firmware --programmer esp_usb_jtag colorlight_5a_75b.svf
