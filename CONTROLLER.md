@@ -39,3 +39,7 @@ The Connection Log can be checked with ``sudo dmesg | grep FTDI``
 litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
 litexcnc flash_firmware --programmer esp_usb_jtag colorlight_5a_75b.svf
 ```
+
+#### Other interface?
+
+You can list all available interfaces via ``openocd -c interface_list`` or with ``openocd -c apdater list`` wich is currently not working for me.
