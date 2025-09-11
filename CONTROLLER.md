@@ -39,27 +39,9 @@ The Connection Log can be checked with ``sudo dmesg | grep FTDI``.
 
 You can list connected FTDI Devices via ``lsusb | grep -i ftdi``!
 
-##### OpenOCD Config
-
-Defaulty there is only a Adpter config for the FT232 wich has not the right ID for us.
-
-```apt-get install openocd libftdi-dev```
-
-```nano /usr/share/openocd/scripts/interface/ft2232h.cfg```
-
-```
-interface ftdi
-ftdi vid_pid 0x0403 0x6010
-ftdi channel 0
-ftdi layout_init 0x0018 0x05fb
-transport select swd
-adapter speed 1000
-```
-
-
 ```
 litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
-litexcnc flash_firmware --programmer esp_usb_jtag colorlight_5a_75b.svf
+litexcnc flash_firmware --programmer ftdi/esp32_devkitj_v1 colorlight_5a_75b.svf
 ```
 
 #### Other interface?
