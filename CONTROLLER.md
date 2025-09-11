@@ -43,6 +43,8 @@ You can list connected FTDI Devices via ``lsusb | grep -i ftdi``!
 
 Defaulty there is only a Adpter config for the FT232 wich has not the right ID for us.
 
+```apt-get install openocd libftdi-dev```
+
 ```nano /usr/share/openocd/scripts/interface/ft2232h.cfg```
 
 ```
