@@ -33,7 +33,9 @@ To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX
 
 To use the ESP Programmer to flash the FPGA you need to install the ``fpga-icestorm`` Driver.
 
-The Connection Log can be checked with ``sudo dmesg | grep FTDI``
+The Connection Log can be checked with ``sudo dmesg | grep FTDI``.
+
+You can list connected FTDI Devices via ``lsusb | grep -i ftdi``!
 
 ```
 litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
