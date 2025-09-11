@@ -41,13 +41,13 @@ You can list connected FTDI Devices via ``lsusb | grep -i ftdi``!
 
 Defaulty there is only a Adpter config for the FT232 wich has not the right ID for us.
 
-```nano /usr/share/openocd/scripts/interface/ftdi/ft2232.cfg```
+```nano /usr/share/openocd/scripts/interface/ftdi/ft2232h.cfg```
 
 ```
 interface ftdi
-ftdi_vid_pid 0x0403 0x6010
-ftdi_channel 0
-ftdi_layout_init 0x0018 0x05fb
+ftdi vid_pid 0x0403 0x6010
+ftdi channel 0
+ftdi layout_init 0x0018 0x05fb
 transport select swd
 adapter speed 1000
 ```
