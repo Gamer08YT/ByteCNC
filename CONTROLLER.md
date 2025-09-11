@@ -26,3 +26,10 @@ You can use a flexible PCB to Bypass the 74LVC245 IC see https://github.com/Disa
 As Software i use LinuxCNC running on a Lenovo Thinkcenter.
 
 To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX-CNC wich simulates a Mesa Driver.
+
+### Build && Flash
+
+```
+litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
+litexcnc flash_firmware --programmer esp_usb_jtag colorlight_5a_75b.svf
+```
