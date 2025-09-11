@@ -31,6 +31,8 @@ To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX
 
 #### ESP Programmer
 
+https://deepwiki.com/riscv-collab/riscv-openocd/4.3.1-ftdi-based-adapters
+
 To use the ESP Programmer to flash the FPGA you need to install the ``fpga-icestorm`` Driver.
 
 The Connection Log can be checked with ``sudo dmesg | grep FTDI``.
@@ -41,7 +43,7 @@ You can list connected FTDI Devices via ``lsusb | grep -i ftdi``!
 
 Defaulty there is only a Adpter config for the FT232 wich has not the right ID for us.
 
-```nano /usr/share/openocd/scripts/interface/ftdi/ft2232h.cfg```
+```nano /usr/share/openocd/scripts/interface/ft2232h.cfg```
 
 ```
 interface ftdi
