@@ -29,6 +29,8 @@ To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX
 
 ### Build && Flash
 
+If you flash, please plugin the board first, than you can connect the JTAG Programmer to your PC.
+
 #### ESP Programmer
 
 https://deepwiki.com/riscv-collab/riscv-openocd/4.3.1-ftdi-based-adapters
