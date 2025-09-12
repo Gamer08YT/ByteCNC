@@ -45,6 +45,13 @@ litexcnc flash_firmware --programmer ftdi/esp32_devkitj_v1 colorlight_5a_75b.svf
 ```
 
 #### Usage in HAL
+
+If you have LinuxCNC installed on the machine, you can test the connection with the card and show the created pins. Start a the hal with halrun and type the following commands:
+loadrt litexcnc connections="eth:10.0.0.10"
+show pin
+show param
+show function
+
 ##### Ethernet
 
 ```loadrt litexcnc connections="eth:<IP-address>"```
