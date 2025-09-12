@@ -45,7 +45,14 @@ litexcnc flash_firmware --programmer ftdi/esp32_devkitj_v1 colorlight_5a_75b.svf
 ```
 
 #### Usage in HAL
-```loadrt litexcnc_eth connections="192.168.1.224"```
+##### Ethernet
+
+```loadrt litexcnc connections="eth:<IP-address>"```
+
+##### SPI
+```loadrt litexcnc connections="spidev:/dev/spidev0.0"```
+or pigpio
+```loadrt litexcnc connections="pigpio:<CS_channel>:<speed>"```
 
 #### Other interface?
 
