@@ -44,6 +44,9 @@ litexcnc build_firmware 5a-75b_v8.0_i24o32.json --build
 litexcnc flash_firmware --programmer ftdi/esp32_devkitj_v1 colorlight_5a_75b.svf
 ```
 
+#### Usage in HAL
+```loadrt litexcnc_eth connections="192.168.1.224"```
+
 #### Other interface?
 
 You can list all available interfaces via ``openocd -c interface_list`` or with ``openocd -c apdater list`` wich is currently not working for me.
