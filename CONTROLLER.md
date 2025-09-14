@@ -29,6 +29,15 @@ To adopt the card i use following project https://github.com/Peter-van-Tol/LiteX
 
 ### Build && Flash
 
+
+If you have LinuxCNC installed on the machine, you can test the connection with the card and show the created pins. Start a the hal with halrun and type the following commands:
+```
+loadrt litexcnc connections="eth:10.0.0.10"
+show pin
+show param
+show function
+```
+
 If you flash, please plugin the board first, than you can connect the JTAG Programmer to your PC.
 
 #### ESP Programmer
