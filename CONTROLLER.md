@@ -6,6 +6,7 @@ git clone https://github.com/Peter-van-Tol/LiteX-CNC.git
 cd LiteX-CNC
 python3 -m venv ./venv/
 ./venv/bin/pip install litexcnc
+./venv/bin/python -m litexcnc install_driver
 
 The Motion Controller is based on the 5A-75B wich is a cheap LED Driver Board.
 
