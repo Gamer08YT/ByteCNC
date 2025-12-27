@@ -5,11 +5,14 @@
 root@ByteCNC:/home/jaxnprivate/Desktop/linuxcnc-source-dir# source ./scripts/rip-environment
 
 
+
 git clone https://github.com/Peter-van-Tol/LiteX-CNC.git
 cd LiteX-CNC
 python3 -m venv ./venv/
 ./venv/bin/pip install litexcnc
 ./venv/bin/python -m litexcnc install_driver
+./venv/bin/python -m litexcnc install_toolchain
+./venv/bin/python -m litexcnc build_firmware ../5a-75b_v8.0_i12o14p6s6e6.json --build
 
 The Motion Controller is based on the 5A-75B wich is a cheap LED Driver Board.
 
