@@ -2,6 +2,9 @@
 
 ### Install LiteX
 
+root@ByteCNC:/home/jaxnprivate/Desktop/linuxcnc-source-dir# source ./scripts/rip-environment
+
+
 git clone https://github.com/Peter-van-Tol/LiteX-CNC.git
 cd LiteX-CNC
 python3 -m venv ./venv/
