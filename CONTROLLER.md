@@ -13,7 +13,8 @@ python3 -m venv ./venv/
 ./venv/bin/python -m litexcnc install_driver
 ./venv/bin/python -m litexcnc install_toolchain
 sudo apt install yosys nextpnr-ecp5
-./venv/bin/python -m litexcnc build_firmware ../5a-75b_v8.0_i12o14p6s6e6.json --build
+wget https://raw.githubusercontent.com/Gamer08YT/ByteCNC/refs/heads/main/litexcnc/5a-75b_v8.0_i12o14p6s6e6.json
+./venv/bin/python -m litexcnc build_firmware ./5a-75b_v8.0_i12o14p6s6e6.json --build
 
 The Motion Controller is based on the 5A-75B wich is a cheap LED Driver Board.
 
